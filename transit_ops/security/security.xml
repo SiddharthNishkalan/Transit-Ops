@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ========================================================= -->
+    <!-- Module Category -->
+    <!-- ========================================================= -->
+
+    <record id="module_category_transit_ops" model="ir.module.category">
+        <field name="name">Transit Operations</field>
+        <field name="description">Access rights for Transit Operations Platform</field>
+        <field name="sequence">20</field>
+    </record>
+
+    <!-- ========================================================= -->
+    <!-- Security Groups -->
+    <!-- ========================================================= -->
+
+    <!-- Transit Administrator -->
+    <record id="group_transit_admin" model="res.groups">
+        <field name="name">Transit Administrator</field>
+        <field name="category_id" ref="module_category_transit_ops"/>
+    </record>
+
+    <!-- Fleet Manager -->
+    <record id="group_fleet_manager" model="res.groups">
+        <field name="name">Fleet Manager</field>
+        <field name="category_id" ref="module_category_transit_ops"/>
+    </record>
+
+    <!-- Dispatcher -->
+    <record id="group_dispatcher" model="res.groups">
+        <field name="name">Dispatcher</field>
+        <field name="category_id" ref="module_category_transit_ops"/>
+    </record>
+
+    <!-- Maintenance Staff -->
+    <record id="group_maintenance_staff" model="res.groups">
+        <field name="name">Maintenance Staff</field>
+        <field name="category_id" ref="module_category_transit_ops"/>
+    </record>
+
+    <!-- Driver -->
+    <record id="group_driver" model="res.groups">
+        <field name="name">Driver</field>
+        <field name="category_id" ref="module_category_transit_ops"/>
+    </record>
+
+    <!-- Viewer / Read Only -->
+    <record id="group_viewer" model="res.groups">
+        <field name="name">Viewer</field>
+        <field name="category_id" ref="module_category_transit_ops"/>
+    </record>
+
+</odoo>

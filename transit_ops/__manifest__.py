@@ -1,0 +1,28 @@
+{
+    'name': 'Transit Operations',
+    'version': '1.0.0',
+    'summary': 'Manage fleet, trips, drivers, maintenance and expenses',
+    'category': 'Operations',
+    'author': 'Transit Ops',
+    'website': '',
+    'license': 'LGPL-3',
+    'depends': ['base', 'mail'],
+    'data': [
+        'data/sequence.xml',
+        'security/security.xml',
+        'security/ir.model.access.csv',
+
+        'views/menu.xml',
+        'views/dashboard_views.xml',
+        'views/vehicle_views.xml',
+        'views/driver_views.xml',
+        'views/trip_views.xml',
+        'views/maintenance_views.xml',
+        'report/report.xml',
+        'views/reports.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
